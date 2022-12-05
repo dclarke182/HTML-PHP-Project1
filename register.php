@@ -1,0 +1,31 @@
+<?php
+  include 'includes/signup.inc.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheet.css?<?=filemtime("stylesheet.css")?>" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="background">
+		<div class="blur2">
+		
+		</div>
+		<div class="blur">
+			<div style="text-align:center" class="container-reg">
+				<form action="includes/signup.inc.php" method="post" id='login-form' class="login-form">
+					<h1>Register Here</h1>
+					<input type="text" placeholder="Enter your email" id="email" name="email" required autocomplete="off"></br>
+					<input type="password" placeholder="Create a password" id="pwd" name="pwd" required autocomplete="off"></br>
+                    <input type="password" id="confirm-pwd" name="confirm_pwd" value="" placeholder="Confirm your password" autocomplete="off" required></br>
+                    <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required></br>
+					<!--<input type="submit" value="Create Account" id="register">-->
+					<button type="submit" name="submit" id="register">Create Account</button>
+					<p>Have an account? <span onclick="location.href='login.php'">Login Here!</span></p>
+				</form>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
